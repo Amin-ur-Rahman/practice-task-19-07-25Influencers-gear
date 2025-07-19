@@ -113,7 +113,7 @@
 }
 
 .banner-text {
-    max-width: 80%;
+    width: 80%;
     font-weight: 600;
 }
 .banner-btn {
@@ -124,6 +124,9 @@
 @media  screen and (max-width: 934px) {
     .nav-bar {
         flex-direction: column;
+    }
+    .banner-text {
+        width: 100%;
     }
     .banner {
         text-align: center;
