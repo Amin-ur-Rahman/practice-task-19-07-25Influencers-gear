@@ -84,7 +84,7 @@
 }
 .banner {
     width: 100%;
-    margin: clamp(50px, 8vh, 80vh) auto;
+    margin: clamp(2rem, 6vw, 4rem) auto;
     justify-content: space-between;
 }
 .banner-img {
@@ -140,4 +140,28 @@
         padding: 0;
     }
 }
+
+/* --------logo section----------- */
+
+.sponsors-section {
+    width: 80dvw;
+    margin-block-end: clamp(1.5rem, 2vw, 3rem);
+    margin-inline: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.sponsor-logo {
+    display: block;
+}
+@media screen and (max-width: 934px) {
+    .sponsors-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+    }
+    .sponsor-logo {
+        justify-self: center;
+    }
+}
+
 
