@@ -205,6 +205,8 @@
     
 }
 .product-card {
+    display: flex;
+    flex-direction: column;
     padding: var(--padding-block-s);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -220,18 +222,21 @@
         width: 100%;
         height: auto;
     }
-
+   
+    .see-more {
+        align-self: center;
+    }
     .product-card-container {
         grid-template-columns: 1fr;
     }
 
-    .product-card-container {
-        padding-inline: 1rem;
-    }
 }
 
 @media screen and (min-width: 935px) and (max-width: 1024px) {
     .product-card-container {
         grid-template-columns: 1fr 1fr;
+    }
+     .see-more {
+        align-self: center;
     }
 }
